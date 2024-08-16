@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import "./Project.css";
 import { sumArray } from "../../Helper";
+import { projects } from "../../data";
+import Card from "./Card";
 
 const tabs = [
     { name: "All" },
@@ -10,6 +12,7 @@ const tabs = [
 ];
 
 const Project = () => {
+    const [displayableProjects, setDisplayableProjects] = useState([]); // Initialize as an empty array
     const [activeIndex, setActiveIndex] = useState(0);
     const [offset, setOffset] = useState(0);
     const [indicatorWidth, setIndicatorWidth] = useState(0);
@@ -25,6 +28,15 @@ const Project = () => {
         setIndicatorWidth(itemEls.current[activeIndex].offsetWidth);
     }, [activeIndex]);
 
+    const setProjects = (category) => {
+        if (category === "All") {
+            setDisplayableProjects(projects);
+        } else {
+            const filteredProjects = projects.filter((item) => item.category.toLowerCase() === category.toLowerCase());
+            setDisplayableProjects(filteredProjects);
+        }
+    };
+
     return (
         <section id="projects">
             <div className="section-wrapper project-container">
@@ -32,27 +44,41 @@ const Project = () => {
                     <h2 className="primary-title">Projects</h2>
                 </div>
                 <nav>
-                    {
-                        tabs.map((tab, index) => (
-                            <button
-                                ref={el => itemEls.current[index] = el}
-                                onClick={() => {
-                                    setActiveIndex(index);
-                                }}
-                                key={index}
-                            >
-                                {tab.name}
-                            </button>
-                        ))
-                    }
-                    <span className="active-indicator" style={{
-                        left: `${offset}px`,
-                        width: `${indicatorWidth}px`
-                    }}></span>
+                    {tabs.map((tab, index) => (
+                        <button
+                            type="button"
+                            ref={el => itemEls.current[index] = el}
+                            onClick={() => {
+                                setActiveIndex(index);
+                                setProjects(tab.name);
+                            }}
+                            key={index}
+                        >
+                            {tab.name}
+                        </button>
+                    ))}
+                    <span
+                        className="active-indicator"
+                        style={{
+                            left: `${offset}px`,
+                            width: `${indicatorWidth}px`
+                        }}
+                    ></span>
                 </nav>
+                <div className="card-container">
+                    {displayableProjects.map((project, index) => (
+                        <Card
+                            title={project.title}
+                            image={project.image}
+                            description={project.description}
+                            stack={project.stack}
+                            key={index}
+                        />
+                    ))}
+                </div>
             </div>
         </section>
     );
-}
+};
 
 export default Project;
