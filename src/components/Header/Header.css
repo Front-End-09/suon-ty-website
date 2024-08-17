@@ -4,6 +4,7 @@
     overflow: hidden;
     position: relative;
     justify-content: center;
+    margin-bottom: 30px;
 }
 #header.blur-effect::before{
     top: 0;

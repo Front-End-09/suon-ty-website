@@ -5,7 +5,7 @@
     border: 1px solid rgba(var(--color-border-rgb), 0.15);
     transition: background 200ms, border 200ms;
     overflow: hidden;
-    align-items: center;
+    align-items: stretch;
     flex-direction: column;
     justify-content: space-between;
     animation: zoomIn 400ms;
@@ -18,12 +18,7 @@
         scale: 1;
     }
 }
-#projects .card-container{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    text-align: center;
-    gap: 1rem;
-}
+
 /*  Enable hover only on non touch device */
 @media(hover:hover) and (pointer:fine){
     .card:hover{

@@ -56,7 +56,7 @@ const Card = (props) => {
                         </div>
                     </div>{ /* End Stack Card Container */}
                     <div className="button-container ">
-                        <a href={props.demoLink} target="_blank" className="btn btn-primary">Demo</a>
+                        <a href={props.demoLink} target="_blank" rel="noreferrer" className="btn btn-primary">Demo</a>
                         <div className="btn-share"><AiOutlineShopping/></div>
                     </div>
                 </div>

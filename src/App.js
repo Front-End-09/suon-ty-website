@@ -3,7 +3,7 @@ import Header from "./components/Header"
 import About from "./components/About"
 import Service from "./components/Services"
 import Skill from "./components/Skills"
-import Project from "./components/Projects"
+// import Project from "./components/Projects"
 import Testimonial from "./components/Testimonial"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
@@ -16,7 +16,7 @@ function App(){
          <About/>
          <Service/>
          <Skill/>
-         <Project/>
+         {/* <Project/> */}
          <Testimonial/>
          <Contact/>
          <Footer/>

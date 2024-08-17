@@ -12,7 +12,7 @@ const tabs = [
 ];
 
 const Project = () => {
-    const [displayableProjects, setDisplayableProjects] = useState([]); // Initialize as an empty array
+    const [displayableProjects, setDisplayableProjects] = useState(projects);
     const [activeIndex, setActiveIndex] = useState(0);
     const [offset, setOffset] = useState(0);
     const [indicatorWidth, setIndicatorWidth] = useState(0);
@@ -30,7 +30,7 @@ const Project = () => {
 
     const setProjects = (category) => {
         if (category === "All") {
-            setDisplayableProjects(projects);
+          return  setDisplayableProjects(projects);
         } else {
             const filteredProjects = projects.filter((item) => item.category.toLowerCase() === category.toLowerCase());
             setDisplayableProjects(filteredProjects);
@@ -66,12 +66,12 @@ const Project = () => {
                     ></span>
                 </nav>
                 <div className="card-container">
-                    {displayableProjects.map((project, index) => (
+                    {displayableProjects.map((projects, index) => (
                         <Card
-                            title={project.title}
-                            image={project.image}
-                            description={project.description}
-                            stack={project.stack}
+                            title={projects.title}
+                            image={projects.image}
+                            description={projects.description}
+                            stack={projects.stack}
                             key={index}
                         />
                     ))}
