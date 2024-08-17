@@ -9,7 +9,7 @@ import { profile1 } from "../../images";
 const data = [
     {
         avatar: profile1,
-        name: 'Samuel Eze',
+        name: 'Suon Ty',
         review: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quisquam
                  ab culpa consectetur architecto earum, atque dicta cupiditate officia laboriosam ratione
                  voluptatibus molestias corrupti ullam cumque. Repellat earum aspernatur eveniet!
@@ -17,7 +17,7 @@ const data = [
     },
     {
         avatar: profile1,
-        name: 'Samuel Eze',
+        name: 'Suon Ty',
         review: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quisquam
                  ab culpa consectetur architecto earum, atque dicta cupiditate officia laboriosam ratione
                  voluptatibus molestias corrupti ullam cumque. Repellat earum aspernatur eveniet!
@@ -25,7 +25,7 @@ const data = [
     },
     {
         avatar: profile1,
-        name: 'Samuel Eze',
+        name: 'Suon Ty',
         review: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quisquam
                  ab culpa consectetur architecto earum, atque dicta cupiditate officia laboriosam ratione
                  voluptatibus molestias corrupti ullam cumque. Repellat earum aspernatur eveniet!
@@ -33,7 +33,7 @@ const data = [
     },
     {
         avatar: profile1,
-        name: 'Samuel Eze',
+        name: 'Suon Ty',
         review: `Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla quisquam
                  ab culpa consectetur architecto earum, atque dicta cupiditate officia laboriosam ratione
                  voluptatibus molestias corrupti ullam cumque. Repellat earum aspernatur eveniet!
