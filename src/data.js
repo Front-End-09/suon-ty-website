@@ -11,7 +11,7 @@ export const menu = [
     {name:"About"},
     {name:"Service"},
     {name:"Skill"},
-    {name:"Projects"},
+    // {name:"Projects"},
     {name:"Testimonial"},
     {name:"Contact"},
 ]
