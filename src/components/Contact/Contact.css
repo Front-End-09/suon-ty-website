@@ -54,8 +54,12 @@ input,textarea{
     resize: none;
     color: var(--color-white);
 }
-input:focus,textarea:focus{
-    border-color: var(--color-primary);
+.name:focus {
+    border-color: var(--color-primary) !important;
+}
+textarea:focus {
+    border-color: var(--color-primary) !important;
+    
 }
 @media(max-width:1024px){
     #contact .contact-group{
