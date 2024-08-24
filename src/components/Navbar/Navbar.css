@@ -1,7 +1,8 @@
 .navbar-container {
     display: flex;
     align-items: stretch;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 110px;
     padding: 20px;
     position: relative;
     width: 100%;
@@ -20,7 +21,7 @@
 .navbar-container .tab-group{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-center;
     gap: 20px;
 }
 .logo-container .tab-item{

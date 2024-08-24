@@ -7,7 +7,7 @@ import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { FaTimes } from "react-icons/fa";
 import gsap from "gsap"
-import { useGSAP } from "@gsap/react"
+// import { useGSAP } from "@gsap/react"
 const Navbar = () => {
     const [ showSidebar, setShowSidebar ] = useState(false);
     const [ visible, setVisible ] = useState(false);
@@ -47,9 +47,9 @@ const Navbar = () => {
                     <div className="overlay" onClick={() => setShowSidebar(!showSidebar)}></div>
                 ) : ""
             }
-            <div className="logo-container" onClick={() => setShowSidebar(!showSidebar)}>
+            {/* <div className="logo-container" onClick={() => setShowSidebar(!showSidebar)}>
                  <SiWebmoney/>
-            </div>
+            </div> */}
             <div className={`tab-group ${showSidebar ? 'show' : '' } `}>
                 <span className="icon-container close-btn" onClick={() => setShowSidebar(!showSidebar)}>
                    <FaTimes/>
