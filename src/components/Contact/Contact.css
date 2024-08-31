@@ -59,7 +59,6 @@ input,textarea{
 }
 textarea:focus {
     border-color: var(--color-primary) !important;
-    
 }
 @media(max-width:1024px){
     #contact .contact-group{
