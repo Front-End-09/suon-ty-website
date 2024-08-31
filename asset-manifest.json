@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/suon-ty-website/static/css/main.e642825b.css",
+    "main.css": "/suon-ty-website/static/css/main.c172991c.css",
     "main.js": "/suon-ty-website/static/js/main.370efee6.js",
     "static/js/453.6c6d2968.chunk.js": "/suon-ty-website/static/js/453.6c6d2968.chunk.js",
     "static/media/profile-2.jpg": "/suon-ty-website/static/media/profile-2.036fb3d57a6d494b8b56.jpg",
@@ -10,12 +10,12 @@
     "static/media/profile-6.jpeg": "/suon-ty-website/static/media/profile-6.72f781cb3632d1197181.jpeg",
     "static/media/profile-5.jpeg": "/suon-ty-website/static/media/profile-5.d52a7b9e26a8cecef2a1.jpeg",
     "index.html": "/suon-ty-website/index.html",
-    "main.e642825b.css.map": "/suon-ty-website/static/css/main.e642825b.css.map",
+    "main.c172991c.css.map": "/suon-ty-website/static/css/main.c172991c.css.map",
     "main.370efee6.js.map": "/suon-ty-website/static/js/main.370efee6.js.map",
     "453.6c6d2968.chunk.js.map": "/suon-ty-website/static/js/453.6c6d2968.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e642825b.css",
+    "static/css/main.c172991c.css",
     "static/js/main.370efee6.js"
   ]
 }
