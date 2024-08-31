@@ -57,6 +57,9 @@ input,textarea{
 .name:focus {
     border-color: var(--color-primary) !important;
 }
+.email:focus {
+    border-color: var(--color-primary) !important;
+}
 textarea:focus {
     border-color: var(--color-primary) !important;
 }
