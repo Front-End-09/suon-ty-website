@@ -57,7 +57,7 @@ const Navbar = () => {
                 {
                   menu.map((list,index) => (
                     <Link
-                         activeClass="active"
+                        //  activeClass="active"
                          className="tab-item name"
                          to={list.name.toLowerCase()}
                          spy={true}
